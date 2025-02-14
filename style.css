@@ -1,0 +1,305 @@
+/* reset css */
+
+* {
+  min-width: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.hola{
+  display: none;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+}
+css-doodle {
+
+  display: none;
+  position: fixed;
+  top: -10vh;
+  left: 0;
+  width: 100vw;
+  height: 110vh;
+  z-index: -1; /* Para que quede detrás de todo */
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* styles */
+/* TODO: Cambiar la fuente
+
+* {
+  font-family: comic-sans;
+} */
+
+body {
+  background-color: #fad7df;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-letter {
+  position: relative;
+}
+
+.cover {
+  position: absolute;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-top: 90px solid #fe3334;
+  border-bottom: 90px solid transparent;
+
+  /*  */
+  transition: transform .75s;
+  transform-origin: top;
+}
+
+.paper {
+  position: absolute;
+  line-height: 2rem;
+  right: 5px;
+  /*  */
+  z-index: -1;
+  background: white;
+  width: 350px;  /* Ajustado proporcionalmente */
+  height: 160px; /* Ajustado proporcionalmente */
+  padding: 1.3rem; /* Ajuste de padding */
+  font-size: 0.95rem; /* Tamaño del texto levemente reducido */
+  transition: all .75s;
+}
+
+.letter {
+  border-left: 180px solid #ff989e;
+  border-right: 180px solid #ff989e;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid #ff858a;
+}
+.options {
+  display: flex;
+  gap: 5rem;
+
+  & button {
+    color: #ff3234;
+    font-weight: 600;
+    border-radius: 3px;
+    background: #fad7df;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fe3334;
+    cursor: pointer;
+  }
+
+  & button:hover {
+    background: #ff989e;
+    color: white;
+  }
+}
+
+.open-cover {
+  transform: rotatex(180deg);
+}
+
+.open-paper {
+  animation: openPaper 1s forwards;
+  height: 350px;
+}
+
+@keyframes openPaper {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -270px; /* Ajuste proporcional */
+  }
+}
+.close-paper {
+  animation: closePaper .5s forwards;
+  height: 180px;
+}
+
+@keyframes closePaper {
+  0% {
+    top: -120px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+
+.heart {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 46.5%;
+  margin: auto;
+  font-size: 3rem;
+
+  color: #fe3334;
+
+  animation: crecer 1.5s forwards ;
+}
+
+.heart1 {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    margin: auto;
+    font-size: 3rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 1.5s forwards ;
+  }
+  .heart2 {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 51%;
+    margin: auto;
+    font-size: 3rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 1.5s forwards ;
+  }
+  .heart3 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    margin: auto;
+    font-size: 6rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 2s forwards ;
+  }
+
+  .heart4 {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    margin: auto;
+    font-size: 1rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 4s forwards ;
+  }
+
+  .heart5 {
+    display: none;
+    position: absolute;
+    top: 68%;
+    left: 70%;
+    margin: auto;
+    font-size: 5rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 1s forwards ;
+  }
+
+  .heart6 {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 70%;
+    margin: auto;
+    font-size: 5rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 1s forwards ;
+  }
+
+
+  .heart7 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin: auto;
+    font-size: 2rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 3s forwards ;
+  }
+
+
+  .heart8 {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: auto;
+    font-size: 7rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 1.5s forwards ;
+  }
+
+
+  .heart9 {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    margin: auto;
+    font-size: 4rem;
+  
+    color: #fe3334;
+  
+    animation: crecer 5s forwards ;
+  }
+
+
+@keyframes crecer {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 3;
+    opacity: 0;
+
+  }
+}
+
+
+
+
