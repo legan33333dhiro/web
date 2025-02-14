@@ -72,6 +72,9 @@ btnOpenElement.addEventListener('click', ()=> {
 
   }, 500)
 
+  setTimeout(()=>{const hola2 = document.querySelector('.hola2')
+    hola2.style.display = 'block' }, 500)
+
 })
 btnCloseElement.addEventListener('click', ()=> {
   btnOpenElement.disabled = false
