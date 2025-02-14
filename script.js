@@ -68,11 +68,12 @@ btnOpenElement.addEventListener('click', ()=> {
 
     const heartElement9 = document.querySelector('.heart9')
     heartElement9.style.display = 'block'
+    setTimeout(()=>{const hola2 = document.querySelector('.hola2')
+      hola2.style.display = 'block' }, 500)
 
   }, 500)
 
-  const hola2 = document.querySelector('.hola2')
-    hola2.style.display = 'block' 
+  
 
 })
 btnCloseElement.addEventListener('click', ()=> {
