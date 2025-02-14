@@ -69,7 +69,7 @@ btnOpenElement.addEventListener('click', ()=> {
     const heartElement9 = document.querySelector('.heart9')
     heartElement9.style.display = 'block'
     setTimeout(()=>{const hola2 = document.querySelector('.hola2')
-      hola2.style.display = 'block' }, 520)
+      hola2.style.display = 'block' }, 620)
 
   }, 500)
 
