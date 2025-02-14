@@ -44,8 +44,7 @@ btnOpenElement.addEventListener('click', ()=> {
    const hola = document.querySelector('.hola')
    hola.style.display = 'block'
 
-   const hola2 = document.querySelector('.hola2')
-   hola2.style.display = 'block'
+
 
     const heartElement3 = document.querySelector('.heart3')
     heartElement3.style.display = 'block'
